@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_bg_white_radius_15">
+
+    <TextView
+        android:id="@+id/dialog_update_app_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="有新版本啦"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/dialog_update_app_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_update_app_tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="请点击更新"
+        android:textColor="@color/black_60"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/dialog_update_app_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_update_app_tv2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/FF999999"/>
+
+    <TextView
+        android:id="@+id/dialog_update_app_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dialog_update_app_tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="马上更新"
+        android:textColor="@color/bt_red"
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/dialog_update_app_progress_bar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:max="100"
+        android:progressDrawable="@drawable/bg_web_progress_bar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

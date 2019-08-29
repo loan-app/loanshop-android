@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FFEEEEEE">
+
+    <com.ailiangbao.alb.ui.base.view.TabBarView
+        android:id="@+id/activity_about_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/activity_about_iv"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/activity_about_tab_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/activity_about_version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_about_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/FF333333"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion global_compileSdkVersion
+    defaultConfig {
+        minSdkVersion global_minSdkVersion
+        targetSdkVersion global_targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "APP_KEY", "\"dkmzz123\""
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$global_suppottSdkVersion"
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // gson
+    api "com.google.code.gson:gson:$global_gsonVersion"
+
+    // dagger2
+    implementation "com.google.dagger:dagger:$global_daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$global_daggerCompilerVersion"
+
+    // okhttp
+    api "com.squareup.okhttp3:okhttp:$global_okhttpVersion"
+
+    // rxjava/rxandroid
+    api "io.reactivex.rxjava2:rxjava:$global_rxjavaVersion"
+    api "io.reactivex.rxjava2:rxandroid:$global_rxandroidVersion"
+    //三级联动控件
+    api 'com.contrarywind:Android-PickerView:4.1.7'
+
+//    // glide
+//    implementation("com.github.bumptech.glide:glide:4.7.1") {
+//        exclude group: 'com.android.support'
+//    }
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    api("jp.wasabeef:glide-transformations:3.3.0") {
+        exclude group: 'com.android.support'
+    }
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+//     xlog
+//    compile "com.dangbei:xlog:1.0.1"
+//     xfunc
+//    compile "com.dangbei:xfunc:1.0.1"
+    api files('libs/xfunc.jar')
+
+    implementation('jp.wasabeef:glide-transformations:3.3.0') {
+        exclude group: 'com.android.support'
+    }
+
+    // dal request
+//    api("com.github.wangjiegulu:dal_request:2.1.0", {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+//        exclude group: 'com.google.code.gson', module: 'gson'
+//        exclude group: 'io.reactivex.rxjava2', module: 'rxjava'
+//    })
+
+    // RapidORM
+    api("com.github.wangjiegulu:rapidorm:$global_rapidormVersion") {
+        exclude group: 'com.android.support'
+    }
+    api "com.github.wangjiegulu:rapidorm-api:$global_rapidormApiVersion"
+    annotationProcessor "com.github.wangjiegulu:rapidorm-compiler:$global_rapidormCompilerVersion"
+    api project(path: ':library')
+
+}

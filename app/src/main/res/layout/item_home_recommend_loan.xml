@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="153dp"
+    android:background="@color/FFEEEEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/bg_home_recommend_loan"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_home_recommend_loan_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/FF333333"
+            android:textSize="15sp"
+            tools:text="dfdfdfd"/>
+
+        <TextView
+            android:id="@+id/item_home_recommend_loan_quota_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_home_recommend_loan_name_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/bt_red"
+            android:textSize="20sp"
+            tools:text="dfsdfsdfds"/>
+
+        <TextView
+            android:id="@+id/item_home_recommend_loan_bt_tv"
+            android:layout_width="219dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/item_home_recommend_loan_quota_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/shape_bg_red_10"
+            android:gravity="center"
+            android:text="立即申请"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+</FrameLayout>

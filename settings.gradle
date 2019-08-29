@@ -1,0 +1,1 @@
+include ':app', ':provider', ':screen-lib', ':screen-annotation', ':screen-process', ':SimpleDropMenu', ':library-gson', ':library'

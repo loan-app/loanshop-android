@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab_tv_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.MainActivity">
+
+    <TextView
+        android:id="@+id/activity_tab_tv"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="10dp"
+        android:text="提现"
+        android:textColor="@color/tvPrimary"
+        android:textSize="17sp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/activity_tab_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/tab_separation_line"
+        android:visibility="gone"/>
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/activity_main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/activity_main_bottom_bar_item_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="20dp"
+            app:iconNormal="@mipmap/ic_tab_home_unfocus"
+            app:iconSelected="@mipmap/ic_tab_home_focus"
+            app:iconWidth="20dp"
+            app:itemMarginTop="1dp"
+            app:itemText="首页"
+            app:itemTextSize="11sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/FF717171"
+            app:textColorSelected="@color/bt_red"
+            app:touchDrawable="?attr/selectableItemBackground"/>
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/activity_main_bottom_bar_item_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="21dp"
+            app:iconNormal="@mipmap/ic_tab_middle_unfocus"
+            app:iconSelected="@mipmap/ic_tab_middle_focus"
+            app:iconWidth="20dp"
+            app:itemMarginTop="1dp"
+            app:itemText="大全"
+            app:itemTextSize="11sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/FF717171"
+            app:textColorSelected="@color/bt_red"
+            app:touchDrawable="?attr/selectableItemBackground"/>
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/activity_main_bottom_bar_item_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="19dp"
+            app:iconNormal="@mipmap/ic_tab_my_unfocus"
+            app:iconSelected="@mipmap/ic_tab_my_focus"
+            app:iconWidth="22dp"
+            app:itemMarginTop="1dp"
+            app:itemText="我的"
+            app:itemTextSize="11sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/FF717171"
+            app:textColorSelected="@color/bt_red"
+            app:touchDrawable="?attr/selectableItemBackground"/>
+    </com.chaychan.library.BottomBarLayout>
+
+    <View
+        android:id="@+id/activity_main_bottom_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/activity_main_bottom_bar"
+        android:background="@color/FFEEEEEE"
+        android:visibility="gone"/>
+    <!--<com.roughike.bottombar.BottomBar-->
+    <!--android:id="@+id/activity_main_bottom_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--app:bb_activeTabColor="@color/colorAccent"-->
+    <!--app:bb_inActiveTabColor="@color/black"-->
+    <!--app:bb_tabXmlResource="@xml/main_bottom_bar"-->
+    <!--app:bb_titleTextAppearance="@style/BottomBarTitleTextStyle" />-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/activity_main_fl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <com.ailiangbao.alb.ui.base.view.NotScrollViewPager
+        android:id="@+id/activity_main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main_bottom_bar_line"/>
+</RelativeLayout>

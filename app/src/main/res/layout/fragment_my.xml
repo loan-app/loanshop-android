@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FFEEEEEE">
+
+    <FrameLayout
+        android:id="@+id/fragment_my_fl"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/bg_my_top">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="99dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:src="@mipmap/ic_head_image"/>
+
+            <TextView
+                android:id="@+id/fragment_my_telephone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:text="12412414141"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_my_fl"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.ailiangbao.alb.ui.main.my.view.ItemView
+            android:id="@+id/fragment_my_item_01"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="14dp"/>
+
+        <com.ailiangbao.alb.ui.main.my.view.ItemView
+            android:id="@+id/fragment_my_item_03"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="14dp"/>
+
+        <com.ailiangbao.alb.ui.main.my.view.ItemView
+            android:id="@+id/fragment_my_item_04"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="14dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/dialog_loading"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:visibility="invisible"-->
+    <!--android:layout_height="wrap_content"/>-->
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/dialog_loading"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/white"/>
+
+    <TextView
+        android:id="@+id/dialog_loading_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_loading"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_all_loan_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.sss.simpleDropMenu.SimpleDropMenu
+        android:id="@+id/fragment_all_loan_ddm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dropMenuDistanceOfTabAndImage="4dp"
+        app:dropMenuDividerColor="#00000000"
+        app:dropMenuMenuParentHeight="50dp"
+        app:dropMenuSelectedIcon="@mipmap/ic_drop_down_selected"
+        app:dropMenuTabChildGravity="center"
+        app:dropMenuTabGravity="center_horizontal"
+        app:dropMenuTabIsWrapContent="false"
+        app:dropMenuTextSelectedColor="@color/bt_red"
+        app:dropMenuTextSize="17sp"
+        app:dropMenuTextUnselectedColor="@color/tvPrimary"
+        app:dropMenuUnderLineHeight="1dp"
+        app:dropMenuUnderlineColor="@color/transparent"
+        app:dropMenuUnselectedIcon="@mipmap/ic_drop_down_unselected"/>
+
+    <View
+        android:id="@+id/fragment_all_loan_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/FFEEEEEE"/>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/fragment_all_loan_recycle_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="@color/FF333333"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="1dp"/>-->
+
+</LinearLayout>

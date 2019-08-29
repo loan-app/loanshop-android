@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="dialog_bg_color">#cc000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_10">#19FFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_30">#4CFFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_55">#8cFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_70">#B2FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_90">#E5FFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black_10">#19000000</color>
+    <color name="black_15">#26000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4C000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_55">#8c000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B2000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_90">#E5000000</color>
+
+    <!--文字主色调-->
+    <color name="tvPrimary">#FF444444</color>
+    <!--红色按钮色-->
+    <color name="bt_red">#FFFE6450</color>
+
+    <color name="text_login">#FF333333</color>
+    <color name="et_login">#FFDEDEDF</color>
+    <color name="et_hint_login">#FF999999</color>
+    <color name="et_login_telephone">#FF777777</color>
+
+    <color name="tab_separation_line">#FFEEEEEE</color>
+
+
+    <color name="tv_FFBBBBBB">#FFBBBBBB</color>
+    <color name="FFEEEEEE">#FFEEEEEE</color>
+    <color name="FF333333">#FF333333</color>
+    <color name="FF979797">#FF979797</color>
+    <color name="FFF5F5F5">#FFF5F5F5</color>
+    <color name="FF737373">#FF737373</color>
+    <color name="FF999999">#FF999999</color>
+    <color name="FF717171">#FF717171</color>
+    <color name="FFC9C9C9">#FFc9c9c9</color>
+</resources>

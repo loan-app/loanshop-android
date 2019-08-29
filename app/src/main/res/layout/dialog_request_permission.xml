@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="250dp"
+              android:layout_gravity="center"
+              android:background="@mipmap/bg_request_permission"
+              android:orientation="vertical"
+              android:paddingLeft="15dp"
+              android:paddingTop="15dp"
+              android:paddingRight="15dp"
+              android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/tv_request_permission_tips"
+        style="@style/text_dark_normal_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/placeholder_request_permission_desc"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_diny_permission_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/placeholder_refuse_permission_desc"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_allow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="30dp"
+        android:text="去允许"
+        android:textColor="@color/bt_red"
+        android:textSize="14sp"/>
+
+</LinearLayout>
