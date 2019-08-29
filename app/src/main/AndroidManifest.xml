@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.ailiangbao.alb">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ailiangbao.alb">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
@@ -47,7 +47,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
 
-                <data android:scheme="par46u"/>
+                <data android:scheme="rn66ar"/>
             </intent-filter>
         </activity>
 
@@ -73,7 +73,7 @@
 
         <meta-data
             android:name="com.openinstall.APP_KEY"
-            android:value="par46u"/>
+            android:value="rn66ar"/>
 
         <!--友盟打包-->
         <!--<meta-data-->

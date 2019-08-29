@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion global_compileSdkVersion
     defaultConfig {
-        applicationId "com.xiji.xmf"
+        applicationId "com.alb.daikuanmiao"
         minSdkVersion global_minSdkVersion
         targetSdkVersion global_targetSdkVersion
         multiDexEnabled true

@@ -17,7 +17,7 @@ public final class WebApiConstants {
 
     }
     //线上测试服47.111.165.27
-    private static final String HOST_STUFF = ProviderApplication.getInstance().isTestServer() ? "192.168.3.14:8082/dkm-api" : "bee.fenghuolunb.com:8016/bee-api";
+    private static final String HOST_STUFF = ProviderApplication.getInstance().isTestServer() ? "192.168.3.14:8082/dkm-api" : "www.jiyawangluo.com/dkm-api";
 
     // http ITG (test)
     private static final String HOST_ITG = getITGHost();
@@ -26,10 +26,10 @@ public final class WebApiConstants {
 
     // http STG
     private static final String HTTP_URL_STG = "http://" + HOST_STUFF;
-    private static final String HTTPS_URL_STG = "http://" + HOST_STUFF;
+    private static final String HTTPS_URL_STG = "https://" + HOST_STUFF;
 
     public static String getITGHost() {
-        return ProviderApplication.getInstance().isTestServer() ? "192.168.3.14:8082/dkm-api" : "bee.fenghuolunb.com:8016/bee-api";
+        return ProviderApplication.getInstance().isTestServer() ? "192.168.3.14:8082/dkm-api" : "www.jiyawangluo.com/dkm-api";
     }
 
     public static String getHttpHost() {
