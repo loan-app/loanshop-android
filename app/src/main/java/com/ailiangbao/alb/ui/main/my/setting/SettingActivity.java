@@ -29,7 +29,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         ImageView logoIv = findViewById(R.id.activity_setting_logo_iv);
         tabBar.setActivity(this);
         tabBar.setNameTv("设置");
-        GlideUtil.loadLocalImageRadius(this, logoIv, R.mipmap.ic_logo_miao, 0, 10);
+        GlideUtil.loadLocalImageRadius(this, logoIv, R.mipmap.ic_logo_yicai, 0, 10);
 //        ItemView item01 = findViewById(R.id.activity_setting_item_01);
 //        item01.hideIcon();
 //        item01.hideLine();
