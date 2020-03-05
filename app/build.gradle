@@ -18,17 +18,17 @@ android {
     }
     signingConfigs {
         debug {
-            keyAlias "alias"
-            keyPassword "miao666"
-            storeFile file("../miao_keystore.jks")
-            storePassword "miao666"
+            keyAlias "key0"
+            keyPassword "19921220"
+            storeFile file("../yicai_keystore.jks")
+            storePassword "19921220"
         }
 
         release {
-            keyAlias "alias"
-            keyPassword "miao666"
-            storeFile file("../miao_keystore.jks")
-            storePassword "miao666"
+            keyAlias "key0"
+            keyPassword "19921220"
+            storeFile file("../yicai_keystore.jks")
+            storePassword "19921220"
         }
     }
     buildTypes {
