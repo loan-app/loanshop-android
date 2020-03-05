@@ -3,12 +3,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion global_compileSdkVersion
     defaultConfig {
-        applicationId "com.alb.daikuanmiao"
+        applicationId "com.alb.yicaiqianbao"
         minSdkVersion global_minSdkVersion
         targetSdkVersion global_targetSdkVersion
         multiDexEnabled true
         versionCode 13
-        versionName "1.1.6"
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         flavorDimensions "versionCode"//统一纬度
         ndk {
@@ -63,7 +63,7 @@ android {
 //    }
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            def nameStuff = "miaobei_${productFlavors.name}_v${defaultConfig.versionName}"
+            def nameStuff = "yicaiqianbao_${productFlavors.name}_v${defaultConfig.versionName}"
             def fileName
             if (variant.buildType.name == "release") {
                 fileName = nameStuff + "_release"

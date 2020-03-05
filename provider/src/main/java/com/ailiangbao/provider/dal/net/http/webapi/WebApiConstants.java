@@ -17,19 +17,19 @@ public final class WebApiConstants {
 
     }
     //线上测试服47.111.165.27
-    private static final String HOST_STUFF = ProviderApplication.getInstance().isTestServer() ? "192.168.3.14:8082/dkm-api" : "www.jiyawangluo.com/dkm-api";
+    private static final String HOST_STUFF = ProviderApplication.getInstance().isTestServer() ? "47.114.163.8:8081/ycqb-api" : "api.whwen.cn/ycqb-api";
 
     // http ITG (test)
     private static final String HOST_ITG = getITGHost();
     private static final String HTTP_URL_ITG = "http://" + HOST_ITG;
-    private static final String HTTPS_URL_ITG = "https://" + HOST_ITG;
+    private static final String HTTPS_URL_ITG = "http://" + HOST_ITG;
 
     // http STG
     private static final String HTTP_URL_STG = "http://" + HOST_STUFF;
-    private static final String HTTPS_URL_STG = "https://" + HOST_STUFF;
+    private static final String HTTPS_URL_STG = "http://" + HOST_STUFF;
 
     public static String getITGHost() {
-        return ProviderApplication.getInstance().isTestServer() ? "192.168.3.14:8082/dkm-api" : "www.jiyawangluo.com/dkm-api";
+        return ProviderApplication.getInstance().isTestServer() ? "47.114.163.8:8081/ycqb-api" : "api.whwen.cn/ycqb-api";
     }
 
     public static String getHttpHost() {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">贷款喵</string>
+    <string name="app_name">易财钱包</string>
     <string name="bank_card_reminder" translatable="false">温馨提示：\n1.所有信息将只用于平台信息认证，请放心填写。\n2.运营商认证将对该手机号进行认证，请确保该手机号正常使用</string>
     <string name="placeholder_request_permission_desc">为了保证您正常更新，请允许获取读写手机储存权限。</string>
     <string name="placeholder_refuse_permission_desc">拒绝后“%1$s”将无法正常更新。</string>
