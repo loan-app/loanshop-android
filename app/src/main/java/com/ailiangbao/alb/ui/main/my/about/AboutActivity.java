@@ -25,7 +25,7 @@ public class AboutActivity extends BaseActivity {
         tabBar.setNameTv("关于我们");
 //        Button loginOutBt = findViewById(R.id.activity_setting_login_out);
         ImageView logoIv = findViewById(R.id.activity_about_iv);
-        GlideUtil.loadLocalImageRadius(this, logoIv, R.mipmap.ic_logo_yicai, 0, 10);
+        GlideUtil.loadLocalImageRadius(this, logoIv, R.mipmap.ic_logo_miao, 0, 10);
         TextView versionTv = findViewById(R.id.activity_about_version_tv);
         versionTv.setText("版本号 " + AppInfoUtil.getVersionName(this));
 //        loginOutBt.setOnClickListener(this);
