@@ -17,7 +17,7 @@ public final class WebApiConstants {
 
     }
     //线上测试服47.111.165.27
-    private static final String HOST_STUFF = ProviderApplication.getInstance().isTestServer() ? "47.114.163.8:8081/ycqb-api" : "api.whwen.cn/ycqb-api";
+    private static final String HOST_STUFF = ProviderApplication.getInstance().isTestServer() ? "35.241.64.186:8081/ycqb-api" : "api.jbhunt.cc/ycqb-api";
 
     // http ITG (test)
     private static final String HOST_ITG = getITGHost();
@@ -29,7 +29,7 @@ public final class WebApiConstants {
     private static final String HTTPS_URL_STG = "http://" + HOST_STUFF;
 
     public static String getITGHost() {
-        return ProviderApplication.getInstance().isTestServer() ? "47.114.163.8:8081/ycqb-api" : "api.whwen.cn/ycqb-api";
+        return ProviderApplication.getInstance().isTestServer() ? "35.241.64.186:8081/ycqb-api" : "api.jbhunt.cc/ycqb-api";
     }
 
     public static String getHttpHost() {
