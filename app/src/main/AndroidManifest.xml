@@ -61,6 +61,8 @@
         <activity android:name=".ui.cate.CateDetailActivity"/>
         <activity android:name=".ui.web.WebActivity"/>
         <activity android:name=".ui.main.my.setting.SettingActivity"/>
+        <activity android:name=".ui.login.LoginTkActivity"/>
+        <activity android:name=".ui.login.LoginTvActivity"/>
 
         <!--适配华为（huawei）刘海屏-->
         <meta-data

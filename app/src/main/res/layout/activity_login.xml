@@ -245,5 +245,13 @@
             android:text="《用户服务协议》"
             android:textColor="#F35A5B"
             android:textSize="12sp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/activity_login_agreement_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私条款》"
+            android:textColor="#F35A5B"
+            android:textSize="12sp"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

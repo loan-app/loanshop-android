@@ -65,6 +65,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.ILoginV
     private TextView loginTv;
     private TextView sendTv;
     private TextView agreementTv;
+    private TextView agreementTk;
     private AnimCheckBox checkBox;
     private ImageView userDeleteIv;
     private ImageView picCodeDeleteIv;
@@ -92,7 +93,8 @@ public class LoginActivity extends BaseActivity implements LoginContract.ILoginV
         picCodeIv = findViewById(R.id.activity_login_pic_code_iv);
         loginTv = findViewById(R.id.activity_login_login_tv);
         sendTv = findViewById(R.id.activity_login_send_tv);
-//        agreementTv = findViewById(R.id.activity_login_agreement_tv);
+        agreementTv = findViewById(R.id.activity_login_agreement_tv);
+        agreementTk = findViewById(R.id.activity_login_agreement_tk);
 //        checkBox = findViewById(R.id.activity_login_check_box);
         userDeleteIv = findViewById(R.id.activity_login_user_delete_iv);
         picCodeDeleteIv = findViewById(R.id.activity_login_pic_code_delete_iv);
@@ -103,6 +105,8 @@ public class LoginActivity extends BaseActivity implements LoginContract.ILoginV
         userDeleteIv.setOnClickListener(this);
         picCodeDeleteIv.setOnClickListener(this);
         passWordDeleteIv.setOnClickListener(this);
+        agreementTv.setOnClickListener(this);
+        agreementTk.setOnClickListener(this);
         userIdEt.addTextChangedListener(new CustomEditText.CustomTextWatcher() {
 
             @Override
@@ -208,6 +212,14 @@ public class LoginActivity extends BaseActivity implements LoginContract.ILoginV
                 break;
             case R.id.activity_login_pic_code_delete_iv:
                 picCodeEt.setText("");
+                break;
+            case R.id.activity_login_agreement_tv:
+                Intent tv =new Intent(this,LoginTvActivity.class);
+                startActivity(tv);
+                break;
+            case R.id.activity_login_agreement_tk:
+                Intent tk =new Intent(this,LoginTkActivity.class);
+                startActivity(tk);
                 break;
             default:
                 break;
