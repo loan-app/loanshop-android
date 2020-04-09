@@ -7,6 +7,14 @@
     android:background="@color/white"
     android:orientation="vertical">
 
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        >
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -136,5 +144,6 @@
 "
         android:textColor="@color/black"
         android:textSize="12sp"/>
+    </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>
