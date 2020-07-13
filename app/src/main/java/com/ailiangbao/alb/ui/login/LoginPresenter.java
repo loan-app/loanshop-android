@@ -68,6 +68,7 @@ public class LoginPresenter extends BasePresenter implements LoginContract.ILogi
         HashMap<String, String> map = new HashMap<>();
         map.put("mobile", telephone);
         map.put("vcode", code);
+        map.put("os", "2");
         interactor.requestLogin(StringUtils.toJsonString(map))
                 .observeOn(RxCompat.getSchedulerOnMain())
                 .compose(RxCompat.doOnCompletedOrError(() -> viewRef.get().cancelLoadingDialog()))
